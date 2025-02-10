@@ -1,0 +1,452 @@
+/*Estos serian los estilos gernerales para todo el documento*/
+html{
+    height: 100%;
+}
+
+body{
+    /* border-width: 7px;
+    border-style: solid;
+    border-color: rgb(30, 80, 218); */
+    width: auto;
+    height: auto;
+    background-color: rgb(190, 253, 193);
+    padding: 70px;
+    padding-top: 0;
+
+}
+header{
+    width: auto;
+    height: auto;
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(16, 146, 23);
+    /* margin: 40px;
+    margin-top: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    background-color: aquamarine;
+}
+a {
+    text-decoration: none;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas:'header header'
+                        'QuienesSomos QuienesSomos'
+                        'ActividadesRealizadas ProximosEventos'
+                        'TemasInteres VideosRelacionados'
+                        'formulario formulario'
+                        'footer footer';
+    }
+.item0{
+    grid-area: header;
+}    
+.item1{
+    grid-area: QuienesSomos;
+    display: grid;
+    width: auto;
+}
+.item1 > div{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+.item1 img{
+    padding: 1%;
+}
+.item1 iframe{
+    padding: 1%;
+}
+
+.item2{
+    grid-area: ActividadesRealizadas;
+
+
+}
+.item3{
+    grid-area: ProximosEventos;
+}
+.item4{
+    grid-area: TemasInteres;
+}
+.item5{
+    grid-area: VideosRelacionados;
+    display: block;
+    border: solid green 7px;
+    margin-top: 10px;
+    height: auto;
+    width: auto;
+}
+.diviframe{
+    display:flex ;
+    justify-content: center;
+    margin-top: 22%;
+    width: auto;
+    padding: 3%;
+
+}
+.item5 h3{
+    height: 20px;
+    border-bottom: 0px;
+}
+.item5 iframe {
+
+    border: solid 7px red;
+}
+
+.item6{
+    grid-area: formulario;
+    display: grid;
+    height: auto;
+    width: auto;
+    border-width: 7px;
+    border-color :black;
+    border-style :solid; 
+    background-color: rgb(34,182,45,0.5);    
+    justify-content: center;
+    align-items: center;
+}
+.item7{
+    grid-area: footer;
+    height: auto;
+    width: 100%;
+}
+footer > p {
+    color: aliceblue;
+    text-align: center;
+}
+
+form {
+    border: solid 7px red;
+    font-family: Helvetica;
+    font-size: 1.4rem;
+    padding: 3%;
+    text-transform:capitalize;
+    font-weight: 700;
+    background: rgba(42, 102, 42, 0.397);
+}
+form > label input{
+   /* border: solid 3px blue; */
+    padding: .3rem;
+    width: 97%;
+    border: none;
+    border-bottom: green solid 3px;
+    background: none;
+    font-weight: 800;
+    text-transform: uppercase;
+} 
+select{
+    padding: .5rem;
+    margin-bottom: 5%;
+    width: 100%;
+    border: green solid 3px;
+    border-radius: 7%;
+    background: none;
+}
+#dos{
+    padding: 3%;
+}
+#opcion1{
+    margin-top: 2rem;
+}
+
+form textarea{
+    width: 98%;
+}
+form button{
+    padding: 3%;
+    width: 100%;
+    border: none;
+    background: rgb(4, 92, 11);
+    color: aliceblue;
+}
+form button:hover{
+    background: rgba(11, 129, 184, 0.795);
+    color:aliceblue;
+}
+
+form input::placeholder{
+    color: rgba(10, 43, 7, 0.849);
+    font-size: 1rem;
+}
+.flex-container{
+    display: flex;
+    justify-content:center;
+}
+.flex-container ul {
+    text-align: center;
+    color: blue;
+    font-family:monospace;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 800;
+}    
+
+
+/*Media Querie para dispositivos con pantallas mas pequeñas hasta 480px de ancho de pantalla*/
+@media screen and (max-width:480px) {
+    body{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+        width: auto;    
+    }
+    .grid-container{
+        display:grid;
+        grid-template-areas:
+                        'header'
+                        'QuienesSomos'
+                        'ActividadesRealizadas'
+                        'ProximosEventos'
+                        'TemasInteres'
+                        'VideosRelacionados'
+                        'formulario'
+                        'footer' ;
+        grid-template-columns: 100%;
+        
+    }
+    .navmenu{
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .item1{
+        width: auto;
+        padding-left: 7%;
+    }
+    .item1 > #res{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        padding: auto;
+        margin: 0;
+    } 
+    .item1 p{
+        width: auto;
+        text-align: center;
+    }
+    .item1 img{
+        display: flex;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    .item1 iframe{
+        display:flex ;
+        width: 90%;
+        padding: 0;
+        margin-top: 3%;
+    }
+
+    .item2{
+        display: grid;
+        justify-content: center;
+    }
+    .item2 ul{
+        padding: 0;
+        margin: 0;
+    }
+    .item3{
+        width: auto;
+        overflow-x: auto;
+    }
+    .item3 table{
+        width: 100%;
+    }
+    table td{
+        display: block;
+        width: auto;
+    }
+    table tr{
+        display: flex;
+        flex-direction: column;
+        border: 3px solid green;
+        width: auto;
+    }
+    table th{
+        width: auto;
+    }
+    table td [data-titulo]{
+        display: flex;
+
+    }
+    table td[data-titulo]::before{
+        content: attr(data-titulo);
+        margin-right: 20px;
+        color: rebeccapurple;
+        font-weight: 700;
+    }
+    .item3 #pmovil{
+        display: none;
+    }
+
+    .item4{
+        width: auto;
+
+    }
+    .item4 #res1{
+        display: grid;
+        justify-content: center;
+    }
+    #TemasInteres img{
+    display:flex;
+    justify-content: center;   
+    width: 90%;
+    margin-left: 0%;
+    }
+    .item4 audio{
+        width: 80%;
+    }
+.item5{
+        display: grid;
+        width: auto;
+        padding: none;
+        margin: none;
+}
+
+.item5 #vcambioc{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 10%;
+    margin-left: 9%;
+}
+#opcionlabel, #opcionlabelB{
+    font-size: 1.2rem;
+}
+}
+
+
+/*Media Querie para dispositivos con pantallas anchas tipo tablet de hasta
+900px de ancho de pantalla*/
+@media screen and (max-width: 900px){
+    body{
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+    header{
+        padding: none;
+        margin: none;
+        width: auto;    
+    }
+    .grid-container{
+        display:grid;
+        grid-template-areas:
+                        'header'
+                        'QuienesSomos'
+                        'ActividadesRealizadas'
+                        'ProximosEventos'
+                        'TemasInteres'
+                        'VideosRelacionados'
+                        'formulario'
+                        'footer' ;
+        grid-template-columns: auto;
+        
+    }
+    .navmenu{
+        flex-direction: flex;
+        justify-content: space-between;
+    }
+
+    .item1{
+        width: auto;
+    }
+    .item1 > #res{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        padding: auto;
+        margin: 0;
+    } 
+    .item1 p{
+        width: auto;
+        text-align: center;
+    }
+    .item1 img{
+        display: flex;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    .item1 iframe{
+        display:flex ;
+        width: 90%;
+        padding: 0;
+        margin-top: 3%;
+    }
+
+    .item2{
+        display: grid;
+        justify-content: center;
+    }
+    .item2 ul{
+        padding: 0;
+        margin: 0;
+    }
+    .item3{
+        width: auto;
+    }
+    .item3 {
+        margin: solid 3px green;
+    }
+    .item4{
+        width: auto;
+
+    }
+    .item4 #res1{
+        display: grid;
+        justify-content: center;
+    }
+    #TemasInteres img{
+    display:flex;
+    justify-content: center;   
+    width: 90%;
+    margin-left: 0%;
+    }
+    .item4 audio{
+        width: 80%;
+    }
+    .item5{
+        display: grid;
+        width: auto;
+        padding: none;
+        margin: none;
+    }
+
+    .item5 #vcambioc{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 10%;
+    margin-left: 9%;
+    }
+    
+    #opcionlabel, #opcionlabelB{
+    font-size: 1.2rem;
+    }
+
+}
+
+
+
+
+
+
+
+/* Estilos para impresión blanco y negro */
+@media print {
+    body {
+        color: black;
+        background: white;
+    }
+    .grid-container {
+        display: block;
+    }
+}

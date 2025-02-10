@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Semana 08 Desarrollo Web 1</title>
+
+    <!--metaetiqueta viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS para todo el documento-->
+<style type="text/css"> 
+    body{
+        font-family:Helvetica;
+        color: blue ; 
+        font-size: 15px;  
+         }
+
+    h1, h2, h3 {color: green;font-family: Arial; font-size: large;}
+
+    h4 {color: aqua;font-family: Arial; font-size: medium;}
+
+    p {color: blue; font-family: Helvetica; font-size: medium;}
+#QuienesSomos {
+                border-width: 7px;
+                border-color :black;
+                border-style :solid; 
+                background-color: rgba(59, 86, 146, 0.5) ;
+
+}
+#QuienesSomos h2 {
+    text-align: center;
+    font-family:verdana;
+    font-size: 30px;
+}
+
+#QuienesSomos p{
+    text-align: center;
+    font-family:monospace;
+    font-size: 15px;
+    font-style: italic;
+}
+
+    </style>
+
+    <style>@import url(estilo1.css);</style>
+    <!--Hoja de estilo semana 07-->
+    <link rel="stylesheet" type="text/css" media="all" href="semana7.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="estilo2.css"/>
+</head>
+<body class="grid-container">
+<div class="item0">
+
+<header>
+    <nav class="flex-container nav-menu">
+        <ul>
+            <li style="display: inline;"><a href="#QuienesSomos">Quienes Somos</a></li>
+            <li style="display: inline;"><a href="#Actividades">Actividades Realizadas</a></li>
+            <li style="display: inline;"><a href="#ProximosEventos">Proximos Eventos</a></li>
+            <li style="display: inline;"><a href="#TemasInteres">Temas De interes</a></li>
+        </ul>
+    </nav>
+
+</header>
+<h1>Organizacion sin fines de Lucro y a favor del Medio Ambiente</h1>
+</div>
+<!-- Seccion para contenido relacionado a seccion Quienes Somos -->
+    <div class="item1" id="QuienesSomos">
+        <h2>Quienes Somos</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus velit perferendis voluptatibus officia, blanditiis fugiat sit corporis magnam aspernatur quo vel dolores voluptates,
+         vitae tempore nobis ut necessitatibus libero modi!</p>
+         <div id="res">
+            <!--Agregar imagenes "locales" agregadas a a carpeta img-->
+            <img src="img/imagen1.jpg" height="300" >
+            <iframe width="560" height="300" src="https://www.youtube.com/embed/jr6CMtIikug?si=A_cOAGGu2rBJDkpj" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+    </div>
+<!--Seccion para contenido de tipo Actividades Realizadas de la Organizacion-->
+    <div class="item2" id="Actividades">
+        <h2>Actividades Realizadas</h2>
+            <ul>
+                <li><strong>Nombre :</strong>  Actividad 1 
+                <p> <strong>Descripción:</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quasi commodi itaque, omnis libero expedita. Vel quam similique minus nesciunt.</p>
+    
+                </li>
+                <li><strong>Nombre :</strong>  Actividad 2 
+                <p> <strong>Descripción:</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quasi commodi itaque, omnis libero expedita. Vel quam similique minus nesciunt.</p>
+                </li>
+            </ul>
+    </div>
+
+<!--Seccion Para contenido de proximas Actividades de la organizacion-->
+    <div class="item3" id="ProximosEventos">
+        <h2>Proximas Actividades De la Organizacion</h2>
+            <table>
+                <tr id="pmovil">
+                    <th>Nombre Actividad</th>
+                    <th>Descripcion</th>
+                    <th>Direccion</th>
+                    <th>Comuna</th>
+                    <th>Fecha</th>
+                </tr>
+                <tr>
+                    <td data-titulo="N Actividad">Actividad 1</td>
+                    <td data-titulo="Descripcion">Charla Cambio Climatico</td>
+                    <td data-titulo="Direccion">Calle Falsa #1234</td>
+                    <td data-titulo="Comuna">Maipu</td>
+                    <td data-titulo="Fecha">18/09/2024 14:00 Hrs.</td>
+                </tr>
+                <tr>
+                    <td data-titulo="N Actividad">Actividad 2</td>
+                    <td data-titulo="Descripcion">Demostracion Energias Renovables</td>
+                    <td data-titulo="Direccion">Calle Uno #4321</td>
+                    <td data-titulo="Comuna">Cerro Navia</td>
+                    <td data-titulo="Fecha">19/09/2024 16:00 Hrs.</td>
+                </tr>
+                <tr>
+                    <td data-titulo="N Actividad">Actividad 3</td>
+                    <td data-titulo="Descripcion">Charla Sobre el Medio Ambiente</td>
+                    <td data-titulo="Direccion">Av. El Algoritmo #0101</td>
+                    <td data-titulo="Comuna">Cerro Navia</td>
+                    <td data-titulo="Fecha">21/09/2024 20:00 Hrs.</td>
+                </tr>
+            </table>
+    </div>
+<!--Nueva Seccion temas De Interes-->
+<div class="item4" id="TemasInteres">
+<h2>Temas De Interes</h2>
+    <h3>El Cambio Climatico</h3>
+    <p>El cambio climático hace referencia a los cambios a largo plazo de las temperaturas y los patrones climáticos. Estos cambios pueden ser naturales, 
+        pero desde el siglo XIX, las actividades humanas han sido el principal motor del cambio climático, debido principalmente a la quema de combustibles fósiles,
+         como el carbón, el petróleo y el gas, lo que produce gases que atrapan el calor.
+    </p>
+<!--agregar imagen alojada en alguna otra web en este caso https://www.ecoavant.com/uploads/s1/28/21/12/imagen-que-es-el-cambio-climatico.webp-->
+<dir id="res1">  
+    <img id="1" src="https://www.ecoavant.com/uploads/s1/28/21/12/imagen-que-es-el-cambio-climatico.webp"
+         alt="imagen 1 sobre cambio climatico" height="300">
+<!--Agregando recursos "localmente" desde carpeta del directorio del proyecto-->
+    <img id="2" src="../Semana 05/img/imagen2.jpg  " height="300" alt="imagen 2 Cambio climatico">
+    <img id="3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2HZVmUkFsnf6smLLMC-FbVQCm12Y0Oz5rA&s" alt="imegen3 Cambio climatico" height="300">
+
+</dir> 
+<!--Audio sobre el tema-->
+<h4>Audio Sobre El Cambio Climatico</h4>
+<audio src="media/El-Cambio-Climatico.mp3" controls>
+   
+</audio>
+
+<h4>Enlaces Externos</h4>
+<a id="enlace" href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico">Enlace a wikipedia- El Cambio climatico</a>
+</div>
+
+<div class="item6">
+    <form  name="FormularioRegistro" method="post" action="send">
+        <h3>Formulario de Registro</h3>
+        <label>Nombre <br><input type="text" placeholder="ingrese su nombre"></label><br>
+        <label>Apellido <br><input type="text" placeholder="Ingrese su apellido"></label><br>
+        <br>
+        <label for="doc">T.Documento</label>
+            <select id="doc">
+                <option value="RUT">RUT</option>
+                <option value="DNI">DNI</option>
+                <option value="CEDULA">CEDULA</option>
+                <option value="PASAPORTE">PASAPORTE</option>
+            </select>
+        <br>
+        <label>Numero De Documento <input type="number" placeholder="Ingresar Identificacion"></label><br>
+        <br>
+        
+        <label>Fecha De nacimiento <input type="date"></label>
+        <div id="dos">
+        <label id="uno" for="Sexo">Sexo</label><br>
+            <input type="radio" id="opcion1" name="opcion" value="opcion1">
+            <label id="opcionlabel" for="opcion1">Masculino</label>
+            <input type="radio" id="opcion2" name="opcion" value="opcion2">
+            <label id="opcionlabelB" for="opcion2">Femenino</label>
+            <br>
+            <br>
+        </div>    
+        <label>Correo Electronico <input type="email" name="" id=""></label><br>
+        <br>
+        <label>Telefono <input type="tel" placeholder="ingrese su numero"></label>
+        <br>
+        <br><label>Comentarios <textarea rows="7"></textarea></label>
+        <br>
+        <button>ENVIAR</button>
+    </form>
+</div>
+
+<div class="item5">
+    
+    <h3>SECCION VIDEO RELACIONADO CON EL CAMBIO CLIMATICO</h3>
+    <!--Iframe sacado de youtube-->
+    <div class="diviframe">
+    <iframe id="vcambioc" width="560" height="315" src="https://www.youtube.com/embed/miEJI0XQiN4?si=dy6iT0X98RezWfuc" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="item7">
+<footer>
+    <h2>PIE DE PAGINA</h2>
+    <h3>Realizado Por David Droguett Gallardo</h3>
+    <p>Estudiante Carreara Tecnico nivel Superior En Informatica</p>
+    <p>PROGRAMACION WEB 1 | SEMANA 08</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Acceso</title>
+
+    <style type="text/css">
+        form{  
+                border-width: 7px;
+                border-color :black;
+                border-style :solid; 
+                color :red;
+                background-color: rgb(34,182,45,0.5);
+            }
+            
+        form h1,h2,h3{ 
+                text-align: center;
+                color: blue;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-size: 30px;
+                }
+
+        form  label{
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+                    }
+
+       select#doc, textarea{
+            border: 3px solid #267712;
+        }
+
+        form input {
+                     border: 3px solid #267712;
+                     width: 25%;
+                }      
+    </style>
+</head>
+<body>
+
+    <form name="Fromulario Acceso" method="get" action="/Semana 02 y 03/index.html">
+        <h1>Formulario De Ingreso </h1>
+        <h2>Organizacion sin fines de Lucro y a favor del Medio Ambiente</h2>
+       <label> Nombre de usuario <input type="text" name="NombreUsuario"></label>
+       <label>Contraseña <input type="password" placeholder="Ingresa tu contraseña"></label><br>
+       <label> <button> Enviar </button></label>
+    </form>
+</body>
+</html>

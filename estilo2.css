@@ -1,0 +1,5 @@
+/*La segunda hoja de estilo, utilizando el método definido con la etiqueta <link>, para la tabla incluida en la sección Próximos eventos. */
+#ProximosEventos {
+    h2{font-family: Georgia; font-size: large; color: rgba(16, 145, 219, 0.849);}
+    table{color: rgb(141, 184, 25);}
+}

@@ -1,0 +1,125 @@
+/*La primera hoja de estilo, utilizando reglas de tipo @import para la lista no enumerada correspondiente a la sección Actividades realizadas.*/
+#Actividades {
+    h2{font-family: Georgia; font-size: large; color: brown;}
+    ul{ list-style: position inside;}
+    li {color: blueviolet;}
+}
+/*Estilos Semana 06*/
+body{
+    margin: none;
+    padding: none;
+    width: auto;
+    height: auto;
+    background-color: rgb(190, 253, 193);
+}
+header{
+    width: auto;
+    height: 30px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(16, 146, 23);
+    /* margin: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    background-color: aquamarine;
+}
+footer{
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(185, 164, 42);
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blue;
+}
+/*ejercicio 2 seman 6*/
+h1,h2,h3,h4 {
+    font-family:monospace;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+}
+p{
+    font-family: Verdana;
+    font-size: 20px;
+}
+/*Además, aplica estilos a la lista de actividades realizadas y a la tabla de los próximos eventos planificados por la organización,
+para mejorar su apariencia y facilitar la comprensión de la información por parte de los usuarios.*/
+
+#Actividades {
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(185, 164, 42);
+    margin-top: 10px;
+    background: rgb(99, 202, 151);
+    font-size: 20px;
+    padding: 3%;
+}
+
+li{
+    border: 2px solid rgb(235, 49, 204);
+    margin: 7px;
+}
+
+#ProximosEventos{
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(214, 118, 226);
+    border-spacing: 5px;
+    background: rgb(224, 187, 255);
+    font-size: 20px;
+    color: azure;    
+    margin-top: 10px;
+    padding: 3%;
+}
+#ProximosEventos tr{
+    font-size: 1rem;
+
+}
+#ProximosEventos table{
+    margin-top: 10%;
+}
+
+
+th{
+    color: azure;
+    width: auto;
+}
+
+td{
+    font-style: italic;
+    color: blue;
+    width: auto;
+    border: 2px solid rgb(235, 49, 204);
+}
+
+/*Ejercicio 3 semana 6*/
+#TemasInteres{
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(65, 145, 89);
+    margin-top: 10px;
+    text-align: center;
+}
+
+#TemasInteres img{
+    border: 3px solid blue;
+    margin: 20px;
+    width: 500px;
+    justify-content: center;
+}
+#TemasInteres h2,h3,h4{
+    font-size: 30px;
+}
+#TemasInteres a{
+    padding: 10px;
+    justify-content: center;
+}
+#TemasInteres audio{
+    padding: auto;
+    justify-content: center;
+}
